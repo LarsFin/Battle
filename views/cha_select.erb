@@ -1,0 +1,24 @@
+<body>
+  <style> body {
+    position: absolute;
+    top: 10%;
+    left: 38%;
+    background: linear-gradient(to top, #cc3300 0%, #663300 100%);
+    color: white
+  }
+  </style>
+<h1> &nbsp; &nbsp; &nbsp; &nbsp; PLAYER: <%= @name %> </h1>
+<h2> SELECT YOUR CHARACTER </h2>
+<img src='knight.png' style="left:-25%">
+<img src='temple_knight.png' style="position:absolute;top:20%;left:-180%">
+<img src='hero_knight.png' style="position:absolute;top:20%;left:125%">
+<h2 style="position:absolute;bottom:-10%;left:-105%"> TEMPLE KNIGHT </h2>
+<h2 style="position:absolute;bottom:-10%;left:50%"> KNIGHT </h2>
+<h2 style="position:absolute;bottom:-10%;left:175%"> HERO KNIGHT </h2>
+<form action='/cha_select' method='post'>
+  <input type="radio" name="char" value="templeknight" style="position:absolute;bottom:-6%;left:-45%">
+  <input type="radio" name="char" value="knight" style="position:absolute;bottom:-6%;left:80%" checked>
+  <input type="radio" name="char" value="heroknight" style="position:absolute;bottom:-6%;right:-110%">
+  <input type='submit' value='GO' method='post' style="position:absolute;bottom:-20%;right:30%">
+</form>
+</body>

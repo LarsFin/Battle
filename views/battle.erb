@@ -1,10 +1,8 @@
-<body>
-  <style> body {
-    position: absolute;
-    top: 20%;
-    left: 43%;
-    background: linear-gradient(to bottom right, #ffffff 0%, #ff9933 99%)
-  }
-  </style>
-<h1> PLAYER1: <%= @name %> </h1>
-</body>
+<h2> player: <%= @name %> </h2>
+<h2> character: <%= @char
+  case @char
+  when 'templeknight'; 'Temple Knight'
+  when 'knight'; 'Knight'
+  when 'heroknight'; 'Hero Knight'
+  end
+ %> </h2>
