@@ -1,8 +1,15 @@
-<h2> player: <%= @name %> </h2>
-<h2> character: <%= @char
-  case @char
-  when 'templeknight'; 'Temple Knight'
-  when 'knight'; 'Knight'
-  when 'heroknight'; 'Hero Knight'
-  end
- %> </h2>
+<body>
+  <style> body {
+    background-image: url(demonbackground.jpg);
+    color: white
+  }
+  </style>
+  <h2 style="border-style:solid;border-width:1px;border-color:white"> &nbsp; player: <%= @name %> &nbsp; &nbsp; health: <%= @health %> </h2>
+  <h2> character: <%= @char
+    case @char
+    when 'templeknight'; 'Temple Knight'
+    when 'knight'; 'Knight'
+    when 'heroknight'; 'Hero Knight'
+    end
+   %> </h2>
+</body>

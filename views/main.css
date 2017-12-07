@@ -1,0 +1,7 @@
+body {
+  position: absolute;
+  top: 10%;
+  left: 38%;
+  background: linear-gradient(to top, #cc3300 0%, #663300 100%);
+  color: white
+}
